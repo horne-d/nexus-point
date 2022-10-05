@@ -742,7 +742,8 @@ header button {
   @media (max-width: 500px) {
     .results_title, .card_img_main p,
     .car_filters, .finance_button,
-    .car_value_info p, .car_value_info input {
+    .car_value_info p, .car_value_info input,
+    .to_top, .sorting {
         display: none;
     }
 
@@ -845,5 +846,9 @@ header button {
         font-size: 12px;
         margin-right: 0.6em;
         font-weight: 100;
+    }
+
+    .results_pagination {
+        justify-content: center;
     }
   }
