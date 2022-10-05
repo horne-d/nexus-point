@@ -1,6 +1,6 @@
 // get json file
 $.ajax({
-    url: '/js/vehicles.json',
+    url: '/vehicles.json',
     dataType: 'json',
     type: 'get',
     cache: false,
