@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus Point</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@100;200;400&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/5ac3be84e8.js" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
+
+</head>
+<body>
+
+    <header class="main_nav">
+        <div class="container_nav">
+            <div class="nav_title">
+                <h2>CarDealer<span>UK</span></h2>
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="">Home</a>
+                    </li>
+                    <li>
+                        <a href="">Our cars</a>
+                    </li>
+                    <li>
+                        <a href="">Sell your car</a>
+                    </li>
+                    <li>
+                        <a href="">Apply for finance</a>
+                    </li>
+                    <li>
+                        <a href="">About us</a>
+                    </li>
+                    <li>
+                        <a href="">Blog</a>
+                    </li>
+                    <li>
+                        <a href="">Contact</a>
+                    </li>
+                </ul>
+                
+                <button>Call us</button>
+                <button>Email us</button>
+            </nav>
+        </div>
+    
+        <div class="container_finance">
+            <div class="finance_title">
+                <h4>Finance a new or used car</h4>
+                <p>Adjust the options to find the finance arrangement that suits you.</p>
+            </div>
+    
+            <div class="finance_selects">
+                <div class="select_box">
+                    <label for="deposit">Deposit</label>
+                    <select name="" id="">
+                        <option value="">Select</option>
+                    </select>
+                </div>
+                <div class="select_box">
+                    <label for="mileage">Mileage</label>
+                    <select name="" id="">
+                        <option value="">Select</option>
+                    </select>
+                </div>
+                <div class="select_box">
+                    <label for="period">Period</label>
+                    <select name="" id="">
+                        <option value="">Select</option>
+                    </select>
+                </div>
+                <div class="select_box">
+                    <label for="budget">Budget</label>
+                    <select name="" id="">
+                        <option value="">Select</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="filters_button">
+        <button>
+            <i class="fas fa-sliders-h"></i>
+            Filters
+        </button>
+    </section>
+
+    <div class="main_container">
+        <div class="filters_left">
+            <div class="filters_title">
+                <h3>Filters</h3>
+                <button>Reset</button>
+            </div>
+
+            <div class="filters_brand">
+                <h4 class="title">Brand</h4>
+                <div class="sub_filter">
+                    <p class="active">Make</p>
+                    <span><i class="fas fa-plus"></i></span>
+                </div>
+                <div class="sub_filter">
+                    <p class="">Model</p>
+                    <span><i class="fas fa-plus"></i></span>
+                </div>
+            </div>
+
+            <div class="filters_budget">
+                <h4 class="title">Budget</h4>
+                <div class="active_filter">
+                    <div class="sub_filter">
+                        <p class="active">Min. Price</p>
+                        <span><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="filter_options">
+                        <p class="selected">£5,000</p>
+                        <span><i class="fas fa-minus"></i></span>
+                    </div>
+                </div>
+                <div class="sub_filter">
+                    <p class="active">Max. Price</p>
+                    <span><i class="fas fa-plus"></i></span>
+                </div>
+            </div>
+
+            <div class="filters_spec">
+                <h4 class="title">Specification</h4>
+                
+                <div class="sub_filter">
+                    <p class="active">Fuel type</p>
+                    <span><i class="fas fa-plus"></i></span>
+                </div>
+                <div class="sub_filter highlighted">
+                    <p class="active">Body type</p>
+                    <span><i class="fas fa-plus"></i></span>
+                </div>
+                <div class="sub_filter">
+                    <p class="active">Transmission</p>
+                    <span><i class="fas fa-plus"></i></span>
+                </div>
+                <div class="sub_filter">
+                    <p class="active">Engine size</p>
+                    <span><i class="fas fa-plus"></i></span>
+                </div>
+                <div class="sub_filter">
+                    <p class="active">Mileage</p>
+                    <span><i class="fas fa-plus"></i></span>
+                </div>
+                <div class="sub_filter">
+                    <p class="active">Colour</p>
+                    <span><i class="fas fa-plus"></i></span>
+                </div>
+                <div class="sub_filter">
+                    <p class="active">Doors</p>
+                    <span><i class="fas fa-plus"></i></span>
+                </div>
+                <div class="sub_filter">
+                    <p class="active">Seats</p>
+                    <span><i class="fas fa-plus"></i></span>
+                </div>
+                <div class="sub_filter">
+                    <p class="active">Features</p>
+                    <span><i class="fas fa-plus"></i></span>
+                </div>
+            </div>
+        </div>
+        <div class="filters_results">
+                
+            <div class="results_title">
+                <h3>339 cars</h3>
+                <div class="car_options">
+                    <button class="selected">All</button>
+                    <button>Used</button>
+                    <button class="premium">New</button>
+                    <button>Offer</button>
+                </div>
+                <div class="sorting">
+                    <select name="" id="">
+                        <option value="">Lowest price</option>
+                        <option value="">Highest price</option>
+                        <option value="">Most popular</option>
+                    </select>
+                </div>
+                
+            </div>
+
+            <div class="results_cards">
+
+                <div class="card_value card">
+                    <div class="car_value_info">
+                        <h3>Value your car</h3>
+                        <h5>Find out the value of your car in just a few minutes.</h5>
+                        <p>VRM<span>*</span></p>
+                        <input type="text" name="" id="" placeholder="Enter VRM">
+                        <p>Mileage<span>*</span></p>
+                        <input type="text" name="" id="" placeholder="Enter Mileage">
+                        <button>Value my car</button>
+                    </div>
+                </div> 
+
+            </div>
+
+            <div class="results_pagination">
+                <div class="to_top">
+                    <a href="#">Back to top</a>
+                </div>
+                <div class="page_buttons">
+                    <span><i class="fas fa-angle-left"></i></span>
+                    <span class="active">1</span>
+                    <span>2</span>
+                    <span>3</span>
+                    <span><i class="fas fa-angle-right"></i></span>
+                    <span><i class="fas fa-angle-double-right"></i></span>
+                </div>
+                <div class="sorting">
+                    <select name="" id="">
+                        <option value="">Lowest price</option>
+                        <option value="">Highest price</option>
+                        <option value="">Most popular</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="agreement_terms">
+                <div class="agreement_writing">
+                    <div class="agreement">
+                        <p><strong>Representative example:</strong> Borrowing £11,790.00 over 4 years with a representative APR of 7.9 %, an annual interest rate of 4.08 % (Fixed) and a deposit of £500.00, the amount payable would be £273.59 per month, with a total cost of credit of £1,843.32 and a total amount payable of £13,633.32.</p>
+                    </div>
+                    <div class="hide_button">
+                        <button>Hide breakdown <span><i class="fas fa-angle-up"></i></span></button>
+                    </div>
+                    
+                    <div class="show_button">
+                        <button>Show breakdown <span><i class="fas fa-angle-down"></i></span></button>
+                    </div>
+                </div>
+
+                <div class="available_plans">
+                    <div class="pcp_plan">
+                        <p>Personal Contract Purchase</p>
+                    </div>
+                    <div class="hp_plan">
+                        <p>Hire Purchase</p>
+                    </div>
+                </div>
+                
+                <div class="agreement_plan">
+                    <div class="amount_months data_field">
+                        <p class="plan_title">48 monthly payments</p>
+                        <p class="plan_data">£157.25</p>
+                    </div>
+                    <div class="cash_price data_field">
+                        <p class="plan_title">Cash price</p>
+                        <p class="plan_data">£9,998.00</p>
+                    </div>
+                    <div class="cust_deposit data_field">
+                        <p class="plan_title">Customer deposit</p>
+                        <p class="plan_data">£250.00</p>
+                    </div>
+                    <div class="amount_of_credit data_field">
+                        <p class="plan_title">Amount of credit</p>
+                        <p class="plan_data">£11,980.75</p>
+                    </div>
+                    <div class="apr data_field">
+                        <p class="plan_title">APR</p>
+                        <p class="plan_data">7.9%</p>
+                    </div>
+                    <div class="term data_field">
+                        <p class="plan_title">Term</p>
+                        <p class="plan_data">48 months</p>
+                    </div>
+                    <div class="total_payable data_field">
+                        <p class="plan_title">Total amount payable</p>
+                        <p class="plan_data">£12,163.72</p>
+                    </div>
+                    <div class="rate_of_interest data_field">
+                        <p class="plan_title">Rate of interest (fixed)</p>
+                        <p class="plan_data">4.08% PA</p>
+                    </div>
+                    <div class="annual_mileage data_field">
+                        <p class="plan_title">Annual mileage</p>
+                        <p class="plan_data">8,000</p>
+                    </div>
+                    <div class="optional_final_payment data_field">
+                        <p class="plan_title">Optional final payment</p>
+                        <p class="plan_data">£3888.04</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <div id="car_range">
+
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

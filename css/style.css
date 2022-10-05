@@ -1,0 +1,771 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Overpass', sans-serif;
+}
+
+ul, ol, li {
+    list-style: none;
+}
+
+/* Nav style */
+.main_container {
+    display: flex;
+}
+
+.main_nav {
+    display: inline;
+}
+
+button.main_nav {
+    background: #82F7FF;
+    padding: 0.3em 1em;
+    border-radius: 14px;
+    margin-right: 0.5em;
+}
+
+.container_nav {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav {
+    padding-right: 1em;
+}
+
+nav ul {
+    display: inline-flex;
+}
+
+nav li {
+    padding: 0 12px;
+}
+
+nav a {
+    padding: 0.5em;
+    line-height: 100px;
+    font-size: 16px;
+    text-decoration: none;
+    color: #55595d;
+}
+
+nav button {
+    font-size: 16px;
+    height: 40px;
+    width: 98px;
+    margin: 18px 5px;
+    background-color: #82F7FF;
+    border-radius: 16px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.nav_title h2 {
+    line-height: 100px;
+    font-weight: 900;
+    font-size: 30px;
+    padding-left: 1em;
+}
+
+.nav_title span {
+    line-height: 100px;
+    padding-left: 0.3em;
+    color: #7572FF;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+header {
+    width: 100vw;
+    display: inline-flex;
+    justify-content: space-between;
+    padding: 0.5em 0;
+}
+
+header h2 {
+    margin: 0em 1em;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+header h2 span {
+    font-size: 10px;
+    color: #7572FF;
+    align-items: center;
+}
+
+header span.header_buttons {
+    margin: 0.5em 1em;
+}
+
+header button {
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.container_finance {
+    height: 137px;
+    background-color: #282338;
+    color: white;
+    border-radius: 0 0 0 50px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2em;
+}
+
+.finance_title {
+    width: 333px;
+    padding: 2em 2em;
+}
+
+.finance_title h4 {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.finance_title p {
+    font-weight: 100;
+}
+
+.finance_selects {
+    padding: 0 0.5em;
+    display: inline-flex;
+}
+
+.select_box {
+    background-color: #3F3A50;
+    padding: 0.6em;
+    border-radius: 16px;
+    height: 40px;
+    width: 200px;
+    margin: 2em 0.7em;
+}
+
+.select_box label {
+    line-height: 40px;
+    color: #a2a9af;
+    font-size: 16px;
+    font-weight: 400;
+    margin-right: 4em;
+}
+
+.select_box select {
+    background-color: #3f3a50;
+    border: none;
+    color: white;
+    font-size: 16px;
+    text-align: right;
+}
+
+/* Left filters style */
+
+.filters_left {
+    width: 260px;
+    padding-left: 2em;
+    display: inline;
+}
+
+.filters_title {
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 1em;
+}
+
+.filters_title button {
+    border: none;
+    background-color: #f87b7b46;
+    color: #f87b7b;
+    font-size: 16px;
+    width: 73px;
+    height: 30px;
+    border-radius: 16px;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+.filters_left .title {
+    text-transform: uppercase;
+    color: #a2a9af;
+    font-size: 12px;
+    letter-spacing: 0.15em;
+    margin-bottom: 2em;
+    margin-top: 2em;
+}
+
+.sub_filter {
+    padding-left: 1em;
+    width: 230px;
+    display: inline-flex;
+    justify-content: space-between;
+    color: #d1d6e0;
+    margin: 1em 0;
+}
+
+.sub_filter .active {
+    color: #000000;
+}
+
+.sub_filter i {
+    color: #d1d6e0;
+    border: 1px solid;
+    font-size: 12px;
+    padding: 0.3em;
+    border-radius: 5px;
+}
+
+.sub_filter.highlighted {
+    background: #7572FF;
+    padding: 1em 1em 1em;
+    border-radius: 20px;
+}
+
+.active_filter {
+    width: 260px;
+    border: 1px solid #d1d6e0;
+    border-radius: 12px;
+    padding-bottom: 1em;
+}
+
+.filter_options {
+    display: inline-flex;
+    margin-left: 1.5em;
+    background: #F6F7FB;
+    color: #d1d6e0;
+    padding: 0.3em 0.6em;
+    border-radius: 10px;
+}
+
+/* Search results style */
+
+.filters_results {
+    padding: 1em 2em;
+    width: 100%;
+}
+
+.results_title {
+    display: inline-flex;
+    justify-content: space-between;
+    width: -webkit-fill-available;
+    margin-bottom: 1em;
+}
+
+.results_title button.selected {
+    border: none;
+    background: #7572FF;
+    color: #ffffff;
+}
+
+.car_options button {
+    border: 1px solid #d1d6e0;
+    width: 70px;
+    margin: 0 0.2em;
+    padding: 0.3em;
+    border-radius: 15px;
+    background: none;
+    color: #55595d;
+}
+
+.results_title button.premium {
+    border: 1px solid #000000;
+    background: none;
+    color: #000000;
+}
+
+.results_title .sorting select {
+    width: 150px;
+    height: 30px;
+    border: none;
+    border-radius: 18px;
+    background: #F6F7FB;
+    color: black;
+    padding: 0.4em 1em;
+}
+
+.card:not(.card_value) {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 1px 4px 12px 0px #888888;
+}
+
+.card_0 {
+    display: none;
+}
+
+.results_cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 1em 1em;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "card_1 card_2 card_3"
+        "card_4 card_value card_5"
+        "card_6 card_7 card_8"
+        "card_9 card_10 card_11";
+}
+
+.card_1 .card_img_main, 
+.card_5 .card_img_main, 
+.card_7 .card_img_main, 
+.card_9 .card_img_main {
+    background-image: url(../img/car1.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.card_2 .card_img_main, 
+.card_4 .card_img_main, 
+.card_8 .card_img_main {
+    background-image: url(../img/car2.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.card_3 .card_img_main, 
+.card_6 .card_img_main, 
+.card_10 .card_img_main, 
+.card_11 .card_img_main {
+    background-image: url(../img/car3.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.card_1, .card_2, .card_3, .card_4 {
+    order: 1;
+}
+
+.card_value {
+    order:2;
+}
+
+.card_5, .card_6, .card_7,
+.card_8, .card_9, .card_10, .card_11 {
+    order:3;
+}
+
+.card_img_main {
+    height: 250px;
+    padding: 1em;
+    border-radius: 15px 15px 0 0;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card_img_main p {
+    color: white;
+    background: #3F3A50;
+    width: 57px;
+    text-align: center;
+    padding: 0.2em;
+    border-radius: 10px;
+    border: 1px solid #888888;
+    line-height: 20px;
+    font-size: 16px;
+}
+
+.car_filters span {
+    color: white;
+    background: #3F3A50;
+    text-align: center;
+    padding: 0.3em 1em;
+    border-radius: 10px;
+    border: 1px solid #888888;
+    line-height: 20px;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.card_stats {
+    padding: 0.6em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.car_details .car_make {
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+    font-size: 16px;
+}
+
+.car_make span {
+    margin-right: 1em;
+}
+
+.car_details .car_model {
+    font-size: 12px;
+    color: #55595D;
+    margin-bottom: 1em;
+}
+
+.car_monthly_price {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.car_monthly_price span {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.car_total_price {
+    font-size: 12px;
+}
+
+.car_total_price span:not(.old_price) {
+    color: #7572FF;
+}
+
+.card_value {
+    width: 100%;
+    border-radius: 15px;
+    border: 1px solid #D1D6E0;
+    background: #F6F7FB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.car_value_info {
+    padding: 2em;
+}
+
+.car_value_info h3 {
+    font-size: 24px;
+    margin-bottom: 1em;
+}
+
+.car_value_info h5 {
+    margin-bottom: 1em;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.car_value_info p {
+    margin-bottom: 1em;
+    font-size: 12px;
+    text-align: left;
+    margin-left: 2em;
+    margin-bottom: 0;
+    margin-top: 0.5em;
+    font-weight: 500;
+}
+
+.car_value_info p span {
+    color: red;
+}
+
+.car_value_info input {
+    width: 95%;
+    height: 50px;
+    border: none;
+    border-radius: 16px;
+    padding-left: 1em;
+    color: #a2a9af;
+}
+
+.car_value_info button {
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 16px;
+    margin-top: 1em;
+    background: #7572FF;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.results_pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.results_pagination .to_top, .results_pagination .sorting {
+    width: 180px;
+}
+
+.results_pagination .to_top a {
+    color: black;
+}
+
+.results_pagination span {
+    padding: 0.5em 1.2em;
+    border-radius: 12px;
+    border: 1px solid #D1D6E0;
+}
+
+.results_pagination span.active {
+    background: #7572ff;
+    border: none;
+    color: white;
+}
+
+.results_pagination .sorting {
+    text-align: right;
+}
+
+.results_pagination .sorting select {
+    width: 150px;
+    height: 50px;
+    border: none;
+    border-radius: 18px;
+    background: #F6F7FB;
+    color: black;
+    padding: 0.4em 1em;
+}
+
+.agreement_terms {
+    background: #F6F7FB;
+    margin-top: 2em;
+    padding: 1em;
+    border-radius: 20px;
+    border: 1px solid #d1d6e0;
+    margin-bottom: 2em;
+}
+
+.agreement_writing {
+    display: inline-flex;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.agreement p {
+    line-height: 26px;
+    padding-right: 1em;
+}
+
+.hide_button button, .show_button button {
+    background: white;
+    border: none;
+    padding: 1em;
+    width: 200px;
+    height: 72px;
+    border-radius: 12px;
+}
+
+.hide_button i.fas.fa-angle-up, 
+.show_button i.fas.fa-angle-down {
+    background: #D1D6E0;
+    height: 18px;
+    width: 18px;
+    color: white;
+    border-radius: 6px;
+    line-height: 18px;
+    margin-left: 2em;
+}
+
+.show_button {
+    display: none;
+}
+
+.available_plans {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    margin: 1em 0;
+    font-size: 14px;
+}
+
+.pcp_plan {
+    width: 50%;
+    border-bottom: 2px solid #7572FF;
+    cursor: pointer;
+}
+
+.hp_plan {
+    width: 50%;
+    border-bottom: 1px solid #D1D6E0;
+    cursor: pointer;
+    color: #55595D;
+}
+
+.agreement_plan {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.3fr 0.3fr;
+    gap: 1em 1em;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "amount_months cash_price cust_deposit amount_of_credit apr"
+        "term total_payable rate_of_interest annual_mileage optional_final_payment";
+}
+
+.amount_months { grid-area: amount_months; }
+    
+.cash_price { grid-area: cash_price; }
+
+.cust_deposit { grid-area: cust_deposit; }
+
+.amount_of_credit { grid-area: amount_of_credit; }
+
+.apr { grid-area: apr; }
+
+.term { grid-area: term; }
+
+.total_payable { grid-area: total_payable; }
+
+.rate_of_interest { grid-area: rate_of_interest; }
+
+.annual_mileage { grid-area: annual_mileage; }
+
+.optional_final_payment { grid-area: optional_final_payment; }
+
+.data_field {
+    text-align: center;
+    background: white;
+    padding: 1em;
+    border-radius: 16px;
+    color: #55595D;
+}
+
+.plan_data {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 0.6em;
+}
+
+.filters_button,
+.car_make span {
+    display: none;
+}
+
+
+@media (max-width: 868px) {
+
+    .filters_button {
+        position: fixed;
+        display: block;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        padding-bottom: 0.5em;
+        background: linear-gradient(0deg, #ffffff, transparent);
+    }
+
+    .filters_button button {
+        background: #7572FF;
+        border: none;
+        color: #ffffff;
+        padding: 1em 1.4em;
+        border-radius: 16px;
+    }
+
+    .results_cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        gap: 1em 1em;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "card_1 card_2"
+            "card_4 card_value"
+            "card_3 card_5"
+            "card_6 card_7" 
+            "card_8 card_9" 
+            "card_10 card_11";
+    }
+
+
+    .card_1, .card_2, .card_3 {
+        order: 1;
+    }
+
+    .card_value {
+        order:2;
+    }
+
+    .card_4, .card_5, .card_6, .card_7,
+    .card_8, .card_9, .card_10, .card_11 {
+        order:3;
+    }
+
+    nav ul,
+    .container_finance,
+    .filters_left,
+    .available_plans,
+    .agreement_plan {
+        display:none;
+    }
+
+    .container_nav {
+        border: 1px solid #D1D6E0;
+        height: 80px;
+    }
+
+    .nav_title h2 {
+        line-height: 80px;
+    }
+
+    .filters_results {
+        padding: 2em;
+    }
+
+    .agreement_writing {
+        flex-wrap: wrap;
+    }
+
+    .hide_button {
+        display: none;
+    }
+
+    .show_button {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .show_button button {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        height: auto;
+    }
+
+  }
+
+  @media (max-width: 500px) {
+    .results_title,
+    .card_img_main p,
+    .car_filters {
+        display: none;
+    }
+    .results_cards {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .card:not(.card_value) {
+        width: 100%;
+        border-radius: 15px;
+        box-shadow: none;
+    }
+
+    .car_make span {
+        margin-right: 1em;
+        display: block;
+    }
+
+    .car_make span button {
+        border: none;
+        background: #3F3A50;
+        color: #ffffff;
+        padding: 0.3em 0.7em;
+        border-radius: 16px;
+        font-size: 12px;
+        margin-right: 0.6em;
+        font-weight: 100;
+    }
+  }
