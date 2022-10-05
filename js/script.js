@@ -11,6 +11,12 @@ $.ajax({
             $('.results_cards').append($('\
                 <div class="card_'+ index +' card">\
                     <div class="card_img_main">\
+                    <div class="card_header">\
+                        <img class="car_image" src="img/car1.png" alt="car1">\
+                        <img class="car_image" src="img/car1.png" alt="car1">\
+                        <img class="car_image" src="img/car1.png" alt="car1">\
+                        <img class="car_image" src="img/car1.png" alt="car1">\
+                    </div>\
                         <p>' + value.advert_classification + '</p>\
                         <div class="car_filters">\
                             <span>' + value.odometer_value + value.odometer_units + '</span>\
@@ -26,7 +32,7 @@ $.ajax({
                         </div>\
                         <div class="car_price">\
                             <span class="results_tab_filters">' + value.odometer_value + value.odometer_units + ' | EV</span><p class="car_monthly_price">£' + value.price + ' <span>/mo (PCP)</span></p>\
-                            <span class="results_tab_filters">' + value.body_type + ' | ' + value.body_type + '</span><p class="car_total_price discount">£' + value.price + ' <span class="old_price">£' + value.price_when_new + '</span> <span><a href="">Calculate finance</a></span></p>\
+                            <span class="results_tab_filters">' + value.body_type + ' | ' + value.body_type + '</span><p class="car_total_price discount">£' + value.price + ' <span class="old_price">£' + value.price_when_new + '</span> <span><a href="" class="finance_button">Calculate finance</a></span></p>\
                         </div>\
                     </div>\
                 </div>\

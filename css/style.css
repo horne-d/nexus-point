@@ -334,6 +334,10 @@ header button {
     background-position: center;
 }
 
+.card_header {
+    display: none;
+}
+
 .card_1, .card_2, .card_3, .card_4 {
     order: 1;
 }
@@ -678,7 +682,6 @@ header button {
             "card_10 card_11";
     }
 
-
     .card_1, .card_2, .card_3 {
         order: 1;
     }
@@ -737,11 +740,86 @@ header button {
   }
 
   @media (max-width: 500px) {
-    .results_title,
-    .card_img_main p,
-    .car_filters {
+    .results_title, .card_img_main p,
+    .car_filters, .finance_button,
+    .car_value_info p, .car_value_info input {
         display: none;
     }
+
+    .container_nav {
+        border: 1px solid #D1D6E0;
+        height: 70px;
+    }
+
+    .nav_title h2 {
+        line-height: 70px;
+        padding: 0;
+        font-size: 26px;
+    }
+
+    .nav_title span {
+        line-height: 70px;
+    }
+
+    header button {
+        border: none;
+        font-size: 12px;
+        font-weight: 600;
+    }
+
+    nav button {
+        height: 36px;
+        width: 70px;
+        margin: 16px 2px;
+        background-color: #82F7FF;
+        border-radius: 16px;
+        border: none;
+        font-weight: 600;
+        cursor: pointer;
+    }
+
+    .filters_results {
+        padding:0;
+    }
+
+    .car_details {
+        padding: 0 0.7em;
+    }
+
+    .card_stats {
+        padding: 0 0.6em;
+    }
+
+    .car_price {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 0;
+        padding: 0 0.7em;
+        font-size: 12px !important;
+    }
+
+    .car_monthly_price {
+        font-size: 14px;
+    }
+
+    .card_img_main {
+        background-image: none !important;
+        height: auto;
+    }
+
+    .card_header {
+        width: 100%;
+        display: inline-flex;
+        overflow: scroll;
+    }
+
+    .car_image {
+        max-width: 29vw;
+        padding: 0.2em;
+        border-radius: 20px;
+    }
+
     .results_cards {
         display: flex;
         flex-wrap: wrap;
