@@ -295,6 +295,10 @@ header button {
     display: none;
 }
 
+span.results_tab_filters {
+    display: none;
+}
+
 .results_cards {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -824,6 +828,10 @@ header button {
     .results_cards {
         display: flex;
         flex-wrap: wrap;
+    }
+      
+     span.results_tab_filters {
+        display: block;
     }
 
     .card:not(.card_value) {
